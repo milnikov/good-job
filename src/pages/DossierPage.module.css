@@ -1,0 +1,171 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-gap);
+}
+
+.back {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.title {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sub {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.callout {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.good {
+  color: var(--status-positive);
+}
+
+.bad {
+  color: var(--status-negative);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 8px;
+  min-width: min(100%, 520px);
+}
+
+.kpi {
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: var(--radius-panel);
+  background: var(--panel);
+}
+
+.kpiLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-gap);
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid var(--border);
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.num {
+  text-align: right;
+}
+
+.muted {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.quote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.issueList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.evidenceImg {
+  max-width: 100%;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.evidencePlaceholder {
+  border: 1px dashed var(--border);
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
+}
+
+.themeList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.themeRow {
+  display: grid;
+  grid-template-columns: 1fr 120px 48px;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.themeTrack {
+  height: 10px;
+  border: 1px solid var(--border);
+  background: var(--shell);
+}
+
+.themeFill {
+  height: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--chart-ink),
+    var(--chart-ink) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.8;
+}
+
+.bigNum {
+  font-size: 28px;
+  margin: 0;
+}
+
+.demoBanner {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}

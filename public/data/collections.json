@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "high-impact-poor-ux",
+    "name": "High impact, poor UX",
+    "filter": {
+      "impactMin": 80,
+      "uxMax": 40,
+      "region": "Europe"
+    }
+  },
+  {
+    "slug": "design-opportunities",
+    "name": "Design opportunities",
+    "filter": {
+      "impactMin": 75,
+      "uxMax": 45
+    }
+  }
+]

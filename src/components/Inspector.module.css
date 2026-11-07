@@ -1,0 +1,126 @@
+.inspector {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.empty {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sub {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.scoreGood {
+  font-size: 28px;
+  color: var(--status-positive);
+}
+
+.scoreBad {
+  font-size: 28px;
+  color: var(--status-negative);
+}
+
+.badgeGood,
+.badgeBad {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+  font-size: 11px;
+}
+
+.badgeGood {
+  color: var(--status-positive);
+}
+
+.badgeBad {
+  color: var(--status-negative);
+}
+
+.facts {
+  margin: 0;
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.facts dt {
+  color: var(--text-secondary);
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.thumbFrame {
+  border: 1px dashed var(--border);
+  background: var(--shell);
+  height: 88px;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.primary {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid var(--chart-ink);
+  background: var(--chart-ink);
+  color: var(--shell);
+  border-radius: var(--radius-control);
+  font-weight: 500;
+  transition: opacity var(--motion-fast);
+}
+
+.primary:hover {
+  opacity: 0.92;
+  color: var(--shell);
+}
+
+.secondary {
+  padding: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: var(--radius-control);
+}
+
+.secondary:hover {
+  background: var(--panel-hover);
+}
+
+.demo {
+  margin: 0;
+  font-size: 11px;
+  color: var(--text-secondary);
+}

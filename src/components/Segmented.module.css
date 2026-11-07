@@ -1,0 +1,30 @@
+.wrap {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  overflow: hidden;
+}
+
+.wrap button {
+  height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text-secondary);
+  transition: background var(--motion-fast), color var(--motion-fast);
+}
+
+.wrap button:last-child {
+  border-right: 0;
+}
+
+.wrap button:hover {
+  background: var(--panel-hover);
+  color: var(--text);
+}
+
+.wrap button.active {
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--chart-ink);
+}

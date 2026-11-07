@@ -1,0 +1,84 @@
+.chartWrap {
+  width: 100%;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.axisLabel {
+  fill: var(--text-secondary);
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+.caption {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.point {
+  cursor: pointer;
+  transition: r var(--motion-fast);
+}
+
+.point:focus-visible {
+  outline: 1px solid var(--chart-ink);
+}
+
+.sectorList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectorRow {
+  display: grid;
+  grid-template-columns: 88px 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.sectorName {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.sectorTrack {
+  position: relative;
+  height: 10px;
+  border: 1px solid var(--border);
+  background: var(--shell);
+}
+
+.sectorFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--chart-ink);
+  opacity: 0.25;
+}
+
+.sectorHatch {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 3px,
+    var(--chart-ink) 3px,
+    var(--chart-ink) 4px
+  );
+  opacity: 0.45;
+}
+
+.sectorCount {
+  font-size: 12px;
+  text-align: right;
+}
+
+.muted {
+  color: var(--text-secondary);
+}

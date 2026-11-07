@@ -1,0 +1,26 @@
+:root {
+  --shell: #101214;
+  --panel: #121416;
+  --panel-hover: #1b1e20;
+  --border: #34383a;
+  --text: #edf1ef;
+  --text-secondary: #a7afad;
+  --chart-ink: #d6e2e1;
+  --status-positive: #73dab8;
+  --status-negative: #e47a85;
+  --radius-panel: 5px;
+  --radius-control: 4px;
+  --space-page: 20px;
+  --space-gap: 10px;
+  --space-inner: 14px;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+  --motion-fast: 140ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
